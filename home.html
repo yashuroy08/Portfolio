@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Management System</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #fceabb, #f8b500);
+  color: #333;
+}
+
+/* Header */
+header {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 30px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin-left: 25px;
+  font-size: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff5722;
+}
+
+/* Hero Section */
+section#home {
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid #ddd;
+}
+
+section#home img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 6px solid #ffb366;
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  display: block;
+}
+
+
+section#home img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+  section#home img {
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  section#home img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+  }
+}
+
+
+section#home h2 {
+  font-size: 2.2rem;
+  margin-top: 25px;
+  color: #2c2c2c;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  nav ul li {
+    margin-left: 0;
+  }
+
+  section#home h2 {
+    font-size: 1.8rem;
+  }
+
+  section#home img {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  section#home {
+    padding: 40px 15px;
+  }
+
+  section#home h2 {
+    font-size: 1.5rem;
+  }
+
+  section#home img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+  }
+}
+footer {
+  background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+  align-items: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="register.php">Register</a></li>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <img src="download.jpeg" alt="about library">
+        <h2>Library Management System</h2>
+    </section>
+    <footer>
+        <p>&copy; 2023 Library Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
